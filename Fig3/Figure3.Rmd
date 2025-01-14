@@ -1,0 +1,96 @@
+---
+title: "Figure3.Rmd"
+author: "Xin Zhang"
+date: "2025-01-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+
+library(lessR)
+library(ggplot2)
+mydata <- data.frame(occupation = c(rep("Genu", round(64.1 * 1000)),
+                   rep("Species", round(24.9 * 1000)),
+                   rep("Phylum", round(2.4 * 1000)),
+                   rep("Order", round(0.6 * 1000)),
+                   rep("Class", round(0.4 * 1000)),
+                   rep("Family", round(7.6 * 1000))))
+PieChart(occupation, data = mydata, main = NULL, hole = 0.4,
+         labels = "off")
+
+
+J20<-read.table("J_dimension20_161.txt.finder.cosine.similarity.single.txt", sep = "\t", header = F)
+M20<-read.table("J.join.level.cosine.all.txt.add.weight.single.txt", sep = "\t", header = F)
+J20[,2] <- c(rep("Etiology-based", 12880))
+M20[,2] <- c(rep("Microbe-based", 12880))
+t<-rbind(J20, M20)
+colnames(t)<-c("ID", "Group", "Similarity")
+ggplot(t, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(legend.position = "top", axis.text = element_text(size = 20), legend.text = element_text(size = 20), text = element_text(size = 20)) + geom_vline(xintercept = 0.012, linetype = "dashed", col = "cyan4")  + geom_vline(xintercept = 0.02, linetype = "dashed", col = "lightcoral") + annotate("text", x= 0.35, y = 7.5, label = "Median= 0.014", size = 8, col = "lightcoral") +  annotate("text", x= -0.35, y = 7.5, label = "Median= 0.01", size = 8, col = "#20B2AA")
+
+
+
+library(ggplot2)
+library(ggbreak) 
+f<-read.table("disease.ratio.txt", sep = "\t")
+ggplot(f, aes(x = V1))+geom_density(color = "#69b3a2",lwd = 1,linetype = 2,fill="#69b3a2",alpha=0.5,adjust=1.75)+annotate("text", x = 1.26, y = 50, label = "Observed=1.26", size=5) + xlab("Ratio of coherent loops to incoherent loops")+ ylab("Probability density")+ annotate("text", x = 1.01, y = 150, label = "Mean=1.01", size=5)+theme(axis.title.x= element_text(size = 13), axis.title.y = element_text(size = 13), panel.grid.major = element_blank(),panel.grid.minor = element_blank(), axis.text = element_text(size = 12)) + theme_classic()  +  geom_vline(xintercept = 1.01, linetype = "dashed", size = 0.8)+ scale_x_break(c(1.02, 1.2), space = 0.3, scales  = 0.5)+annotate("segment",x = 1.26, xend = 1.26, y = 50, yend = 0, colour = "#66CC66", linetype="solid",size=1)
+
+
+
+d<-read.table("161.disease.combine.txt", sep = "\t")
+Hepatic<-read.table("Hepatic.info.txt", sep = "\t")
+Development<-read.table("Development.info.txt", sep = "\t")
+cor.test(d$V3,d$V4)
+par(mfrow = c(1,3))
+smoothScatter(d$V3, d$V4,xlab="Microbiota-based all diseases",ylab="Etiology-based all diseases", nbin = 1000) + text(0.8,0.9, paste("R=", round(cor(d$V3, d$V4), 3), " Padj=5.5e-16", sep=" "), cex = 1, adj = 1, font = 0.1)
+smoothScatter(Hepatic$V3, Hepatic$V4,xlab="Microbiota-based Hepatic",ylab="Etiology-based Hepatic", nbin = 1000) + text(0.8,0.9, paste("R=", round(cor(Hepatic$V3, Hepatic$V4), 3), " Padj=5.5e-16", sep=" "), cex = 1, adj = 1, font = 0.1)
+smoothScatter(Development$V3, Development$V4,xlab="Microbiota-based Development",ylab="Etiology-based Development", nbin = 1000) + text(0.8,0.9, paste("R=", round(cor(Development$V3, Development$V4), 3), " Padj=1.71e-05", sep=" "), cex = 1, adj = 1, font = 0.1)
+
+
+library("ggtree")
+library("lsa")
+library("ape")
+library("ggplot2")
+d<-read.table("J.join.level.consin.all.txt.filter.20min.ID2.change.txt", sep = "\t", header = T, row.names = 1)
+diag(d)<-1
+tree<-hclust(dist(d))
+d_tree<-as.phylo(tree)
+group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
+groupInfo <- split(group_file$ID, group_file$Class)
+d_tree <- groupOTU(d_tree, groupInfo)
+ggtree(d_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +xlim(NA,23) + geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) + theme(legend.position = "right")
+J<-read.table("J_dimension20.txt.finder.txt", sep = "\t", header = T, row.names = 1)
+Js<-cosine(t(J))
+tree<-hclust(dist(Js))
+J_tree<-as.phylo(tree)
+group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
+groupInfo <- split(group_file$ID, group_file$Class)
+J_tree <- groupOTU(J_tree, groupInfo)
+ggtree(J_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +     geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) +xlim(NA,16) + theme(legend.position = "right")
+
+GI<- read.table("GI.disturbance.score.txt", sep = "\t")
+hh<-hist(x= GI$V3, breaks = 40)
+plot(hh, col = "#69b3a2", border = "white", xlab = "Disturbance score (computed based on microbiota in GI tract)", ylab = "Disease count", xlim = c(0, 16), ylim = c(0, 16), labels = F, main = "", cex.axis = 1.1, cex.lab = 1.1) 
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

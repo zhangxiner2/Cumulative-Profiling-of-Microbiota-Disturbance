@@ -1,0 +1,112 @@
+---
+title: "Fig2.Rmd"
+author: "Xin Zhang"
+date: "2025-01-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+library(lessR)
+library(ggplot2)
+mydata <- data.frame(occupation = c(rep("Genu", round(86.9 * 1000)),
+                   rep("Species", round(7.3 * 1000)),
+                   rep("Phylum", round(2.3 * 1000)),
+                   rep("Order", round(0.4 * 1000)),
+                   rep("Family", round(3.1 * 1000))))
+PieChart(occupation, data = mydata, main = NULL, hole = 0.4,
+         labels = "off")
+
+
+
+t<-read.table("fiber_raw.uniq.ano.num.txt.heatmap.up.down.bar.txt", header = F, sep = "\t")
+t<-read.table("fiber.top20.bar.txt", header = F, sep = "\t")
+library(reshape2)
+colnames(t) = c("Item", "Increase", "Decrease")
+df<-melt(t)
+ggplot(df, aes(x=reorder(Item, -value), y=ifelse(variable=="Increase", value, -value), fill = variable))+geom_bar(stat = "identity")+coord_flip()+scale_y_continuous(labels = abs, expand = expansion(mult = c(0.1,0.1)))+ylab("Evidence count")+ xlab("Microbe_type") + theme_classic() + theme(axis.text.y = element_text(size =6),axis.title.y  = element_blank()) + ylim(-11, 50)
+
+
+
+library(ggplot2)
+library(pheatmap)
+library(RColorBrewer)
+library(ggtree)
+library(lsa)
+library(ape)
+library(ggplot2)
+annotation_row <-read.table("fiber.ID.class2.txt", header = F, row.names = 1,sep="\t")
+Fiber<-read.table("J.join.level.cosine.all.txt.add.weight.order.change.txt", header = T, row.names = 1, sep ="\t")
+colnames(Fiber) = rownames(Fiber)
+row.names(annotation_row) <-rownames(Fiber)
+colnames(annotation_row) <- c("Class")
+P<-read.table("J.join.level.final.Pvalue.txt.final.FDR.order.change.txt", sep ="\t", header = T, row.names = 1)
+pmt<-P
+if (!is.null(pmt)){
+    ssmt <- pmt< 0.01
+    pmt[ssmt] <-'*'
+    smt <- pmt >0.01& pmt <0.05
+    pmt[smt] <- '*'
+    pmt[!ssmt&!smt]<- ''
+} else {
+    pmt <- F
+}
+d_tree<-hclust(dist(Fiber))  
+tree<-as.phylo(d_tree)
+ggtree(tree, layout="circular", ladderize = FALSE, branch.length = "none") + geom_tiplab2(size=2, offset=0.1)+geom_text(aes(label=node))
+ggtree(tree, layout = "rectangular", ladderize = FALSE, branch.length = "none") +
+    geom_tiplab(size = 6, offset = 0.3, align = TRUE, linesize = 0) +
+    geom_highlight(node = 38, fill = "yellow") +
+    geom_highlight(node = 42, fill = "#E377c2FF") +
+    geom_highlight(node = 43, fill = "#98DF8AFF") +
+    geom_highlight(node = 36, fill = "red") +
+    geom_highlight(node = 40, fill = "#1F77B4FF") +
+    geom_highlight(node = 41, fill = "#F08080") +
+    xlim(NA, 10)
+pheatmap(Fiber, cluster_rows = T, cluster_cols = T, color = colorRampPalette(c("navy", "white", "firebrick3"))(100), fontsize = 7, annotation_row = annotation_row, annotation_col = annotation_row,  cutree_rows = 6, cutree_cols = 6, fontsize_col = 12, fontsize_row = 12, legend_labels = 10, clustering_method = "complete", show_rownames = T, display_numbers = pmt)
+
+
+
+library(ggplot2)
+##All similarity
+F32<-read.table("32.fiber.J.join.level.cosine.all.txt.add.weight.single.txt", sep = "\t", header = F)
+colnames(F32)<-c("ID1", "ID2", "Similarity")
+ggplot(F32, aes(x=Similarity)) + geom_density(color = "plum3",fill = "thistle3", lwd = 1,linetype = 2, alpha=0.5,adjust=1.75) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(axis.text = element_text(size = 20), legend.text = element_text(size = 20), text = element_text(size = 20)) + annotate("text", x = 0.003, y = 5, label = "Median=0.003", size=7) + geom_vline(xintercept = 0.003, linetype = "dashed") 
+
+
+
+AI<-read.table("32.fiber.J.join.level.cosine.all.txt.add.weight.single.AXOS-Inulin.txt", sep = "\t", header = F)
+AI[,4] <- c(rep("AXOS", 31), rep("Inulin", 31))
+colnames(AI)<-c("ID1", "ID2", "Similarity", "Group") 
+median_values <- aggregate(Similarity ~ Group, data = AI, FUN = median)
+median_values
+ggplot(AI, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(legend.position = "top", axis.text = element_text(size = 25), legend.text = element_text(size = 25), text = element_text(size = 25)) + geom_vline(xintercept = 0.03, linetype = "dashed", col = "lightcoral")  + geom_vline(xintercept = 0.06, linetype = "dashed", col = "cyan4")  + annotate("text", x= -0.2, y = 3.5, label = "Median = 0.03", size = 7, col = "lightcoral") +  annotate("text", x= 0.2, y = 3.5, label = "Median = 0.06", size = 7, col = "#20B2AA") 
+
+
+
+f<-read.table("fiber.ratio.txt", sep = "\t")
+ggplot(f, aes(x = V1))+geom_density(color = "#69b3a2",lwd = 1,linetype = 2,fill="#69b3a2",alpha=0.5,adjust=1.75)+annotate("segment",x = 1.51, xend = 1.51, y = 2, yend = 0, colour = "#66CC66", linetype="solid",size=1)+annotate("text", x = 1.51, y = 2, label = "Observed=1.51", size=5) + xlab("Ratio of coherent to incoherent")+ ylab("Probability density")+ annotate("text", x = 1.11, y = 13.5, label = "Median=1.11", size=5)+theme(axis.title.x= element_text(size = 13), axis.title.y = element_text(size = 13), panel.grid.major = element_blank(),panel.grid.minor = element_blank(), axis.text = element_text(size = 12)) + theme_classic()  +  geom_vline(xintercept = 1.11, linetype = "dashed")
+
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

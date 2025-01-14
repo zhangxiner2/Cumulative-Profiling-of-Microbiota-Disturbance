@@ -1,0 +1,77 @@
+---
+title: "Figure4.Rmd"
+author: "Xin Zhang"
+date: "2025-01-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(ggplot2)
+library(pheatmap)
+
+FD<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.order.change.txt", header = T, row.names = 1, sep = "\t")
+annotation_col <- read.table("123.disease.ID.order.txt", sep = "\t", row.names = 1, header = F)
+annotation_row <-read.table("fiber.ID.class.txt", header = F, row.names = 1,sep="\t")
+colnames(FD) <- rownames(annotation_col)
+row.names(FD) <-rownames(annotation_row)
+colnames(annotation_row) <- c("Class")
+colnames(annotation_col) <- c("System")
+
+#P
+P<-read.table("zx.level.FDR.20dim2.change.order.txt", sep ="\t", header = T, row.names = 1)
+colnames(P) <- rownames(annotation_col)
+row.names(P) <-rownames(annotation_row)
+pmt<-P
+if (!is.null(pmt)){
+    ssmt <- pmt< 0.01
+    pmt[ssmt] <-'*'
+    smt <- pmt >0.01& pmt <0.05
+    pmt[smt] <- '*'
+    pmt[!ssmt&!smt]<- ''
+} else {
+    pmt <- F
+}
+pheatmap(FD, cluster_rows = T, cluster_cols = T, color = colorRampPalette(c("navy", "white", "firebrick3"))(100), fontsize = 7, annotation_row = annotation_row, annotation_col = annotation_col, fontsize_col = 8, fontsize_row = 8, legend_labels = 10,  show_rownames = T, display_numbers = pmt, border_color = "grey60")
+
+
+
+
+#UC and CD
+T3<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.CD.UC.IBS.txt ", sep = "\t", header = F)
+T3[,4] <- c(rep("Crohns Disease", 32), rep("Ulcerative Colitis", 32), rep("IBS", 32))
+colnames(T3)<-c("ID1", "ID2", "Similarity", "Group") 
+mean(subset(T3, T3$Group == "Crohns Disease")[,3])
+mean(subset(T3, T3$Group == "Ulcerative Colitis")[,3])
+mean(subset(T3, T3$Group == "IBS")[,3])
+ggplot(T3, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(legend.position = "top", axis.text = element_text(size = 20), legend.text = element_text(size = 20), text = element_text(size = 20))+ geom_vline(xintercept = median(subset(T3, T3$Group == "Crohns Disease")[,3]), linetype = "dashed", col = "lightcoral")  + geom_vline(xintercept = median(subset(T3, T3$Group == "IBS")[,3]), linetype = "dashed", col = "cyan4") +  geom_vline(xintercept = median(subset(T3, T3$Group == "Ulcerative Colitis")[,3]), linetype = "dashed", col = "#6495ED") + annotate("text", x= 0.03, y = 3.8, label = "Median= -0.01", size = 6, col = "lightcoral") +  annotate("text", x= -0.1, y = 3.5, label = "Median= -0.02", size = 6, col = "#20B2AA") +  annotate("text", x= 0.06, y = 3, label = "Median= 0.007", size = 6, col = "#6495ED")
+
+
+#AXOS and Inulin
+IA<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.Inulin.AXOS.txt", sep = "\t", header = F)
+IA[,4] <- c(rep("Inulin", 123), rep("AXOS", 123))
+colnames(IA)<-c("ID1", "ID2", "Similarity", "Group") 
+ggplot(IA, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(legend.position = "top", axis.text = element_text(size = 25), legend.text = element_text(size = 25), text = element_text(size = 25)) +  geom_vline(xintercept = median(tail(IA[,3],123)), linetype = "dashed", col = "lightcoral")  + geom_vline(xintercept = median(head(IA[,3],123)), linetype = "dashed", col = "cyan4")  + annotate("text", x= -0.3, y = 4.6, label = "Median= -0.005", size = 7, col = "lightcoral") +  annotate("text", x= 0.3, y = 4.6, label = "Median= -0.0002", size = 7, col = "#20B2AA")
+
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
