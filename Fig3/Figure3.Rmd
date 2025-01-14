@@ -57,10 +57,10 @@ smoothScatter(Hepatic$V3, Hepatic$V4,xlab="Microbiota-based Hepatic",ylab="Etiol
 smoothScatter(Development$V3, Development$V4,xlab="Microbiota-based Development",ylab="Etiology-based Development", nbin = 1000) + text(0.8,0.9, paste("R=", round(cor(Development$V3, Development$V4), 3), " Padj=1.71e-05", sep=" "), cex = 1, adj = 1, font = 0.1)
 
 
-library("ggtree")
-library("lsa")
-library("ape")
-library("ggplot2")
+library(ggtree)
+library(lsa)
+library(ape)
+library(ggplot2)
 d<-read.table("J.join.level.consin.all.txt.filter.20min.ID2.change.txt", sep = "\t", header = T, row.names = 1)
 diag(d)<-1
 tree<-hclust(dist(d))
