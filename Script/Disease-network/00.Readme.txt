@@ -1,0 +1,4 @@
+#The directory is used to calculate the netwrok of dietary fiber.
+# If you want to calculate the result file, you only need run 01.Fiber-network.sh. This script is an integrated script.
+
+# If you just want to view the result, please run 09.Plot.R. This script is used for visualization.
