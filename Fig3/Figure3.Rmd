@@ -29,6 +29,26 @@ mydata <- data.frame(occupation = c(rep("Genu", round(64.1 * 1000)),
 PieChart(occupation, data = mydata, main = NULL, hole = 0.4,
          labels = "off")
 
+library(ggtree)
+library(lsa)
+library(ape)
+d<-read.table("J.join.level.consin.all.txt.filter.20min.ID2.change.txt", sep = "\t", header = T, row.names = 1)
+diag(d)<-1
+tree<-hclust(dist(d))
+d_tree<-as.phylo(tree)
+group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
+groupInfo <- split(group_file$ID, group_file$Class)
+d_tree <- groupOTU(d_tree, groupInfo)
+ggtree(d_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +xlim(NA,23) + geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) + theme(legend.position = "right")
+J<-read.table("J_dimension20.txt.finder.txt", sep = "\t", header = T, row.names = 1)
+Js<-cosine(t(J))
+tree<-hclust(dist(Js))
+J_tree<-as.phylo(tree)
+group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
+groupInfo <- split(group_file$ID, group_file$Class)
+J_tree <- groupOTU(J_tree, groupInfo)
+ggtree(J_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +     geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) +xlim(NA,16) + theme(legend.position = "right")
+
 
 J20<-read.table("J_dimension20_161.txt.finder.cosine.similarity.single.txt", sep = "\t", header = F)
 M20<-read.table("J.join.level.cosine.all.txt.add.weight.single.txt", sep = "\t", header = F)
@@ -47,7 +67,7 @@ ggplot(f, aes(x = V1))+geom_density(color = "#69b3a2",lwd = 1,linetype = 2,fill=
 
 
 
-d<-read.table("161.disease.combine.txt", sep = "\t")
+d<-read.table("161.diseases.combine.txt", sep = "\t")
 Hepatic<-read.table("Hepatic.info.txt", sep = "\t")
 Development<-read.table("Development.info.txt", sep = "\t")
 cor.test(d$V3,d$V4)
@@ -57,29 +77,10 @@ smoothScatter(Hepatic$V3, Hepatic$V4,xlab="Microbiota-based Hepatic",ylab="Etiol
 smoothScatter(Development$V3, Development$V4,xlab="Microbiota-based Development",ylab="Etiology-based Development", nbin = 1000) + text(0.8,0.9, paste("R=", round(cor(Development$V3, Development$V4), 3), " Padj=1.71e-05", sep=" "), cex = 1, adj = 1, font = 0.1)
 
 
-library(ggtree)
-library(lsa)
-library(ape)
-library(ggplot2)
-d<-read.table("J.join.level.consin.all.txt.filter.20min.ID2.change.txt", sep = "\t", header = T, row.names = 1)
-diag(d)<-1
-tree<-hclust(dist(d))
-d_tree<-as.phylo(tree)
-group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
-groupInfo <- split(group_file$ID, group_file$Class)
-d_tree <- groupOTU(d_tree, groupInfo)
-ggtree(d_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +xlim(NA,23) + geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) + theme(legend.position = "right")
-J<-read.table("J_dimension20.txt.finder.txt", sep = "\t", header = T, row.names = 1)
-Js<-cosine(t(J))
-tree<-hclust(dist(Js))
-J_tree<-as.phylo(tree)
-group_file <- read.table("J_dimension20.txt.finder.txt.system.txt",header = TRUE,sep = "\t")
-groupInfo <- split(group_file$ID, group_file$Class)
-J_tree <- groupOTU(J_tree, groupInfo)
-ggtree(J_tree, layout="rectangular", ladderize = FALSE, branch.length = "none",aes(color=group)) +     geom_tiplab(size = 2, offset = 0.3, align = TRUE, linesize = 0) +xlim(NA,16) + theme(legend.position = "right")
 
 GI<- read.table("GI.disturbance.score.txt", sep = "\t")
 hh<-hist(x= GI$V3, breaks = 40)
+dev.off()
 plot(hh, col = "#69b3a2", border = "white", xlab = "Disturbance score (computed based on microbiota in GI tract)", ylab = "Disease count", xlim = c(0, 16), ylim = c(0, 16), labels = F, main = "", cex.axis = 1.1, cex.lab = 1.1) 
 
 
