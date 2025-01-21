@@ -29,7 +29,6 @@ PieChart(occupation, data = mydata, main = NULL, hole = 0.4,
 
 
 
-t<-read.table("fiber_raw.uniq.ano.num.txt.heatmap.up.down.bar.txt", header = F, sep = "\t")
 t<-read.table("fiber.top20.bar.txt", header = F, sep = "\t")
 library(reshape2)
 colnames(t) = c("Item", "Increase", "Decrease")
@@ -45,7 +44,7 @@ library(ggtree)
 library(lsa)
 library(ape)
 library(ggplot2)
-annotation_row <-read.table("fiber.ID.class2.txt", header = F, row.names = 1,sep="\t")
+annotation_row <-read.table("fiber.ID.class.txt", header = F, row.names = 1,sep="\t")
 Fiber<-read.table("J.join.level.cosine.all.txt.add.weight.order.change.txt", header = T, row.names = 1, sep ="\t")
 colnames(Fiber) = rownames(Fiber)
 row.names(annotation_row) <-rownames(Fiber)
@@ -72,20 +71,22 @@ ggtree(tree, layout = "rectangular", ladderize = FALSE, branch.length = "none") 
     geom_highlight(node = 36, fill = "red") +
     geom_highlight(node = 40, fill = "#1F77B4FF") +
     geom_highlight(node = 41, fill = "#F08080") +
-    xlim(NA, 10)
+    xlim(NA, 10) +
+    scale_y_reverse()
+
 pheatmap(Fiber, cluster_rows = T, cluster_cols = T, color = colorRampPalette(c("navy", "white", "firebrick3"))(100), fontsize = 7, annotation_row = annotation_row, annotation_col = annotation_row,  cutree_rows = 6, cutree_cols = 6, fontsize_col = 12, fontsize_row = 12, legend_labels = 10, clustering_method = "complete", show_rownames = T, display_numbers = pmt)
 
 
 
 library(ggplot2)
 ##All similarity
-F32<-read.table("32.fiber.J.join.level.cosine.all.txt.add.weight.single.txt", sep = "\t", header = F)
+F32<-read.table("32.fiber.similarity.txt", sep = "\t", header = F)
 colnames(F32)<-c("ID1", "ID2", "Similarity")
 ggplot(F32, aes(x=Similarity)) + geom_density(color = "plum3",fill = "thistle3", lwd = 1,linetype = 2, alpha=0.5,adjust=1.75) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(axis.text = element_text(size = 20), legend.text = element_text(size = 20), text = element_text(size = 20)) + annotate("text", x = 0.003, y = 5, label = "Median=0.003", size=7) + geom_vline(xintercept = 0.003, linetype = "dashed") 
 
 
 
-AI<-read.table("32.fiber.J.join.level.cosine.all.txt.add.weight.single.AXOS-Inulin.txt", sep = "\t", header = F)
+AI<-read.table("AXOS-Inulin.similarity.txt", sep = "\t", header = F)
 AI[,4] <- c(rep("AXOS", 31), rep("Inulin", 31))
 colnames(AI)<-c("ID1", "ID2", "Similarity", "Group") 
 median_values <- aggregate(Similarity ~ Group, data = AI, FUN = median)
