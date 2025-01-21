@@ -19,13 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 library(ggplot2)
 library(pheatmap)
 
-FD<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.order.change.txt", header = T, row.names = 1, sep = "\t")
-annotation_col <- read.table("123.disease.ID.order.txt", sep = "\t", row.names = 1, header = F)
-annotation_row <-read.table("fiber.ID.class.txt", header = F, row.names = 1,sep="\t")
-colnames(FD) <- rownames(annotation_col)
-row.names(FD) <-rownames(annotation_row)
-colnames(annotation_row) <- c("Class")
-colnames(annotation_col) <- c("System")
+FD<-read.table("Fiber-disease.heatmap.txt", header = T, row.names = 1, sep = "\t")
 
 #P
 P<-read.table("zx.level.FDR.20dim2.change.order.txt", sep ="\t", header = T, row.names = 1)
@@ -41,13 +35,13 @@ if (!is.null(pmt)){
 } else {
     pmt <- F
 }
-pheatmap(FD, cluster_rows = T, cluster_cols = T, color = colorRampPalette(c("navy", "white", "firebrick3"))(100), fontsize = 7, annotation_row = annotation_row, annotation_col = annotation_col, fontsize_col = 8, fontsize_row = 8, legend_labels = 10,  show_rownames = T, display_numbers = pmt, border_color = "grey60")
+pheatmap(FD, cluster_rows = T, cluster_cols = T, color = colorRampPalette(c("navy", "white", "firebrick3"))(100), fontsize = 7,  fontsize_col = 8, fontsize_row = 8, legend_labels = 10,  show_rownames = T, display_numbers = pmt, border_color = "grey60", angle_col = 45)
 
 
 
 
 #UC and CD
-T3<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.CD.UC.IBS.txt ", sep = "\t", header = F)
+T3<-read.table("CD.UC.IBS.similarity.txt ", sep = "\t", header = F)
 T3[,4] <- c(rep("Crohns Disease", 32), rep("Ulcerative Colitis", 32), rep("IBS", 32))
 colnames(T3)<-c("ID1", "ID2", "Similarity", "Group") 
 mean(subset(T3, T3$Group == "Crohns Disease")[,3])
@@ -57,7 +51,7 @@ ggplot(T3, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Si
 
 
 #AXOS and Inulin
-IA<-read.table("zx.level.cosine.all.txt.add.weight.20dim2.Inulin.AXOS.txt", sep = "\t", header = F)
+IA<-read.table("Inulin.AXOS-disease.similarity.txt", sep = "\t", header = F)
 IA[,4] <- c(rep("Inulin", 123), rep("AXOS", 123))
 colnames(IA)<-c("ID1", "ID2", "Similarity", "Group") 
 ggplot(IA, aes(x=Similarity, fill = Group)) + geom_density(alpha=0.5) + xlab("Similarity")+ ylab("Density") + theme_classic() + theme(legend.position = "top", axis.text = element_text(size = 25), legend.text = element_text(size = 25), text = element_text(size = 25)) +  geom_vline(xintercept = median(tail(IA[,3],123)), linetype = "dashed", col = "lightcoral")  + geom_vline(xintercept = median(head(IA[,3],123)), linetype = "dashed", col = "cyan4")  + annotate("text", x= -0.3, y = 4.6, label = "Median= -0.005", size = 7, col = "lightcoral") +  annotate("text", x= 0.3, y = 4.6, label = "Median= -0.0002", size = 7, col = "#20B2AA")
