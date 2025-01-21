@@ -1,0 +1,5 @@
+Phylum	2.4%
+Class	0.4%
+Order	0.6%
+Genu	64.1%
+Species	24.9%
