@@ -1,0 +1,318 @@
+29307330	HDF	Bifidobacterium	increase	fecal samples
+29307330	HDF	Coprococcus	decrease	fecal samples
+29307330	HDF	Dorea	decrease	fecal samples
+29307330	HDF	Ruminococcus	decrease	fecal samples
+29307330	HDF	Oscillospira	decrease	fecal samples
+32320024	ITFs	Bifidobacterium	increase	fecal samples
+32320024	ITFs	Actinomyces	increase	fecal samples
+32320024	ITFs	Cellulomonas	increase	fecal samples
+32320024	ITFs	Nesterenkonia	increase	fecal samples
+32320024	ITFs	Lachnospira	decrease	fecal samples
+32320024	ITFs	Oscillospira	decrease	fecal samples
+32320024	ITFs	Brevibacterium	increase	fecal samples
+32320024	ITFs	Dorea	decrease	fecal samples
+32320024	ITFs	Ruminococcus	decrease	fecal samples
+32320024	ITFs	Oribacterium	decrease	fecal samples
+32320024	ITFs	Agromyces	increase	fecal samples
+34385825	DF	Adlercreutzia	decrease	fecal samples
+34385825	DF	Alloprevotella	increase	fecal samples
+34385825	DF	Anaerovorax	decrease	fecal samples
+34385825	DF	Enterococcus	decrease	fecal samples
+34385825	DF	Intestinibacter	decrease	fecal samples
+34385825	DF	Parabacteroides	increase	fecal samples
+30696735	Inulin	Ruminococcus bromii	decrease	fecal samples
+30696735	Inulin	Bifidobacterium	increase	fecal samples
+30696735	Inulin	Anaerostipes	increase	fecal samples
+30696735	Inulin	Eubacterium hallii	decrease	fecal samples
+30696735	Inulin	Roseburia intestinalis	decrease	fecal samples
+30696735	Inulin	Eubacterium rectale	increase	fecal samples
+30696735	RPS	Bifidobacterium	increase	fecal samples
+30696735	RPS	Ruminococcaceae	increase	fecal samples
+30696735	RPS	Clostridium	increase	fecal samples
+30696735	RMS	Ruminococcus bromii	increase	fecal samples
+25527750	PDX	Eubacterium	decrease	fecal samples
+25527750	PDX	Ruminococcus	decrease	fecal samples
+25527750	PDX	Roseburia	decrease	fecal samples
+25527750	PDX	Lachnospiraceae bacterium	decrease	fecal samples
+25527750	PDX	Dorea	decrease	fecal samples
+25527750	PDX	Parabacteroides	increase	fecal samples
+25527750	SCF	Eubacterium	decrease	fecal samples
+25527750	SCF	Ruminococcus	decrease	fecal samples
+25527750	SCF	Roseburia	decrease	fecal samples
+25527750	SCF	Dorea	decrease	fecal samples
+25527750	SCF	Parabacteroides	increase	fecal samples
+18616586	RS	Ruminococcus bromii	increase	fecal samples
+28410921	MSPrebiotic	Bifidobacterium	increase	fecal samples
+28410921	MSPrebiotic	Prevotella	increase	fecal samples
+28410921	MSPrebiotic	Alistipes	increase	fecal samples
+28410921	MSPrebiotic	Desulfovibrio	increase	fecal samples
+28410921	MSPrebiotic	Mogibacterium	increase	fecal samples
+28410921	MSPrebiotic	Sporobacter	increase	fecal samples
+28410921	MSPrebiotic	Olsenella	increase	fecal samples
+28410921	MSPrebiotic	Coprobacillus	decrease	fecal samples
+28410921	MSPrebiotic	Lactobacillus	decrease	fecal samples
+21151493	RS2	Faecalibacterium	decrease	fecal samples
+21151493	RS2	Dorea	decrease	fecal samples
+21151493	RS4	Faecalibacterium	decrease	fecal samples
+21151493	RS4	Parabacteroides	increase	fecal samples
+21151493	RS4	Bifidobacterium	increase	fecal samples
+21151493	RS4	Dorea	decrease	fecal samples
+25006989	polysaccharopeptide	Escherichia	increase	fecal samples
+26552345	BKB	Prevotella	increase	fecal samples
+26386056	β-glucan	Clostridiaceae	increase	fecal samples
+26386056	β-glucan	Ruminococcaceae	decrease	fecal samples
+26386056	β-glucan	Fusobacteriaceae	decrease	fecal samples
+26386056	β-glucan	Clostridium orbiscindens	increase	fecal samples
+26386056	β-glucan	Roseburia hominis	increase	fecal samples
+26386056	β-glucan	Faecalibacterium prausnitzii	decrease	fecal samples
+26386056	β-glucan	Ruminococcus	increase	fecal samples
+26386056	β-glucan	Dialister	decrease	fecal samples
+26386056	β-glucan	Fusobacterium	decrease	fecal samples
+35102419	RS	Barnesiella	increase	fecal samples
+35102419	RS	Bifidobacterium	increase	fecal samples
+35102419	RS	Clostridium	decrease	fecal samples
+35102419	RS	Olsenella	decrease	fecal samples
+35102419	RS	Paraeggerthella	decrease	fecal samples
+35102419	RS	Desulfovibrio	decrease	fecal samples
+35102419	RS	Erysipelotrichaceae	decrease	fecal samples
+35102419	RS	Roseburia	increase	fecal samples
+35102419	RS	Ruminococcus	decrease	fecal samples
+35102419	RS	Pediococcus	decrease	fecal samples
+35102419	RS	Alistipes	increase	fecal samples
+35102419	RS	Butyricicoccus	decrease	fecal samples
+35102419	RS	Faecalibacterium	increase	fecal samples
+35102419	RS	Subdoligranulun	decrease	fecal samples
+20487589	WGM	Bifidobacterium	increase	fecal samples
+20487589	WGM	Atopobium	increase	fecal samples
+28230784	WG	Akkermansia	increase	fecal samples
+28230784	WG	Lactobacillus	increase	fecal samples
+17761020	WG	Bifidobacterium	increase	fecal samples
+17761020	WB	Lactobacillus	increase	fecal samples
+10024093	RS	bacteroides	decrease	fecal samples
+10024093	RS	fusobacteria	decrease	fecal samples
+21272402	RG	Enterococcus	increase	fecal samples
+21272402	RG	Clostridium leptum	increase	fecal samples
+16763747	LKFibre	Bifidobacterium	increase	fecal samples
+16763747	LKFibre	Clostridium ramosum	decrease	fecal samples
+16763747	LKFibre	Clostridium spiroforme	decrease	fecal samples
+16763747	LKFibre	Clostridium cocleatum	decrease	fecal samples
+24874564	Inulin	Bifidobacterium	increase	fecal samples
+24874564	RK	Bifidobacterium	increase	fecal samples
+24874564	RKB	Bacteroides	decrease	fecal samples
+24874564	RK	Bacteroides	decrease	fecal samples
+23038174	BR+WGB	Bacteroides	decrease	fecal samples
+23038174	BR+WGB	Blautia	increase	fecal samples
+23038174	WGB	Blautia	increase	fecal samples
+28230784	RG	Erysipelotrichales	increase	fecal samples
+33369019	Inulin	Bifidobacterium	increase	fecal samples
+33369019	Inulin	Alistipes shahil	increase	fecal samples
+33369019	Inulin	Anaerostipes hadrus	increase	fecal samples
+33369019	Inulin	Parabacteroides distasonis	increase	fecal samples
+31108510	ITFs	Bifidobacterium	increase	fecal samples
+31108510	ITFs	Bifidobacterium longum	increase	fecal samples
+31108510	ITFs	unclassified Clostridiales	decrease	fecal samples
+32928123	AXOS	Bifidobacterium	increase	fecal samples
+32928123	AXOS	Prevotella	increase	fecal samples
+32928123	AXOS	Bacteroides	decrease	fecal samples
+20370946	PDX	Lactobacillus	increase	fecal samples
+20370946	PDX	Bifidobacterium	increase	fecal samples
+28620472	Inulin	Bifidobacterium	increase	fecal samples
+22649263	PDX	Faecalibacterium	increase	fecal samples
+22649263	PDX	Ruminococcus	decrease	fecal samples
+22649263	PDX	Eubacterium	decrease	fecal samples
+22649263	PDX	Clostridium	increase	fecal samples
+22649263	PDX	Phascolarctobacterium	increase	fecal samples
+22649263	PDX	Akkermansia	increase	fecal samples
+22649263	PDX	Dorea	decrease	fecal samples
+22649263	PDX	Dialister	increase	fecal samples
+22649263	PDX	Coprococcus	decrease	fecal samples
+22649263	PDX	Bifidobacterium	decrease	fecal samples
+22649263	PDX	Coriobacterium	decrease	fecal samples
+22649263	SCF	Faecalibacterium	increase	fecal samples
+22649263	SCF	Ruminococcus	decrease	fecal samples
+22649263	SCF	Eubacterium	decrease	fecal samples
+22649263	SCF	Oscillospira	decrease	fecal samples
+22649263	SCF	Phascolarctobacterium	increase	fecal samples
+22649263	SCF	Dorea	decrease	fecal samples
+22649263	SCF	Dialister	increase	fecal samples
+22649263	SCF	Coprococcus	decrease	fecal samples
+22649263	SCF	Lactobacillus	increase	fecal samples
+22649263	SCF	Bifidobacterium	decrease	fecal samples
+22649263	SCF	Coriobacterium	decrease	fecal samples
+8844718	FOS	Bifidobacterium	increase	fecal samples
+15585783	sc-FOS	Bifidobacterium	increase	fecal samples
+15585783	Soybean OS	Bifidobacterium	increase	fecal samples
+15585783	Galacto OS	Bifidobacterium	increase	fecal samples
+DOI:10.1016/j.nutres.2007.01.013	Inulin	Bifidobacterium	increase	fecal samples
+26134388	FME	Faecalibacterium	decrease	fecal samples
+26987626	β2	Bifidobacterium	increase	fecal samples
+20003568	AXOS	Bifidobacterium adolescentis	increase	fecal samples
+20003568	AXOS	Lactobacillus	decrease	fecal samples
+20591206	VLCI	Bifidobacterium	increase	fecal samples
+20591206	VLCI	Lactobacillus	increase	fecal samples
+20591206	VLCI	Atopobium	increase	fecal samples
+20591206	VLCI	Prevotella	decrease	fecal samples
+22099384	PDX	Lactobacillus	decrease	fecal samples
+18326619	B-GOS	Bifidobacterium	increase	fecal samples
+18590586	Inulin	Bifidobacterium adolescentis	increase	fecal samples
+18590586	Inulin	Bifidobacterium longum	increase	fecal samples
+18590586	Inulin	Bifidobacterium bifidum	increase	fecal samples
+https://doi.org/10.1016/S0271-5317(03)00134-9	GOS	Bifidobacterium	increase	fecal samples
+https://doi.org/10.1016/S0271-5317(03)00134-9	GOS	Lactobacillus	increase	fecal samples
+17445348	CH	Clostridium	decrease	fecal samples
+17445348	CH	Bacteroides	decrease	fecal samples
+17445348	CH	Bifidobacterium	increase	fecal samples
+17445348	JA	Clostridium	decrease	fecal samples
+17445348	JA	Bacteroides	decrease	fecal samples
+17445348	JA	Bifidobacterium	increase	fecal samples
+22264499	XOS	Bifidobacterium	increase	fecal samples
+22264499	INU-XOS	Bifidobacterium	increase	fecal samples
+27651791	XOS	Lactobacillus	increase	fecal samples
+27651791	XOS	Bifidobacterium	increase	fecal samples
+27651791	XOS	Clostridium perfringens	decrease	fecal samples
+22244014	β2	Bifidobacterium	increase	fecal samples
+22743314	Inulin	Bifidobacterium	increase	fecal samples
+20187995	PCS	Bifidobacterium	increase	fecal samples
+20187995	PPB	Bifidobacterium	increase	fecal samples
+20187995	PCS	Lactobacillus	increase	fecal samples
+20187995	PPB	Lactobacillus	increase	fecal samples
+20187995	PCS	Propionibacterium	increase	fecal samples
+20187995	PPB	Propionibacterium	increase	fecal samples
+26090092	Predilife	Bifidobacterium	increase	fecal samples
+26090092	Predilife	Lactobacillus	increase	fecal samples
+21773588	Chicory inulin	Lactobacillus	increase	fecal samples
+16365061	FOS	Bifidobacterium	increase	fecal samples
+16365061	FOS	Lactobacillus	increase	fecal samples
+11570986	FHG	Bifidobacterium	increase	fecal samples
+18996881	B-GOS	Bifidobacterium	increase	fecal samples
+18996881	B-GOS	Bacteroides	decrease	fecal samples
+18996881	B-GOS	Lactobacillus	increase	fecal samples
+18996881	B-GOS	Clostridium	increase	fecal samples
+18996881	B-GOS	Eubacterium	increase	fecal samples
+18996881	B-GOS	Histolyticum	decrease	fecal samples
+18996881	B-GOS	Escherichia	decrease	fecal samples
+18996881	B-GOS	Desulfovibrio	decrease	fecal samples
+26218845	B-GOS	Bifidobacterium	increase	fecal samples
+26218845	B-GOS	Bacteroides	increase	fecal samples
+21910949	GOS	Bifidobacterium	increase	fecal samples
+22657950	AXOS	Bifidobacterium	increase	fecal samples
+22657950	AXOS	E. coli	increase	fecal samples
+22657950	AXOS	Lactobacillus	increase	fecal samples
+22657950	AXOS	Bacteroides	increase	fecal samples
+21144106	KGM	Bifidobacterium	increase	fecal samples
+21144106	KGM	Lactobacillus	increase	fecal samples
+31509971	PHGG	Bifidobacterium	increase	fecal samples
+31509971	PHGG	Bacteroides	decrease	fecal samples
+31509971	PHGG	Streptococcus	increase	fecal samples
+31509971	PHGG	Clostridium	decrease	fecal samples
+31509971	PHGG	Ruminococcus	increase	fecal samples
+31509971	PHGG	Megasphaera	increase	fecal samples
+31509971	PHGG	Phascolarctobacterium	decrease	fecal samples
+32951067	PDX	Ruminiclostridium	increase	fecal samples
+33924514	Inulin	Bifidobacterium	increase	fecal samples
+28924143	FOS	Actinobacteria	increase	fecal samples
+28924143	FOS	Bifidobacterium	increase	fecal samples
+28924143	FOS	Acidaminococcus	increase	fecal samples
+28924143	FOS	Salmonella	decrease	fecal samples
+28924143	FOS	Coprococcus	decrease	fecal samples
+28924143	FOS	Turicibacter	decrease	fecal samples
+28924143	FOS	Enterobacter	decrease	fecal samples
+28924143	FOS	Phascolarctobacterium	decrease	fecal samples
+28924143	GOS	Actinobacteria	increase	fecal samples
+28924143	GOS	Bifidobacterium	increase	fecal samples
+28924143	GOS	Holdemania	decrease	fecal samples
+28924143	GOS	Christensenellaceae	decrease	fecal samples
+28924143	GOS	Synergistes	decrease	fecal samples
+28924143	GOS	Dehalobacterium	decrease	fecal samples
+28924143	GOS	Ruminococcus	decrease	fecal samples
+32805028	Avocado	Ruminococcus	decrease	fecal samples
+32805028	Avocado	Faecalibacterium	increase	fecal samples
+32805028	Avocado	Roseburia	decrease	fecal samples
+32805028	Avocado	Lachnospira	increase	fecal samples
+32805028	Avocado	Alistipes	increase	fecal samples
+34365905	GOS	Bifidobacterium	increase	fecal samples
+34365905	GOS	Lactobacillus	increase	fecal samples
+34365905	GOS	Lactococcus	increase	fecal samples
+34365905	GOS	Streptococcus	increase	fecal samples
+33188417	RW	Dorea	decrease	fecal samples
+33188417	RW	Parabacteroides	increase	fecal samples
+33188417	RW	Eubacterium	decrease	fecal samples
+33188417	RW	Peptostreptococcaceae	decrease	fecal samples
+33509667	GOS	Bifidobacterium	increase	fecal samples
+31325040	Wheat germ	Bacteroides	increase	fecal samples
+31325040	Wheat germ	Bifidobacterium	increase	fecal samples
+30827722	AXOS	Eubacterium	increase	fecal samples
+30827722	AXOS	Faecalibacterium	increase	fecal samples
+30827722	AXOS	Bifidobacterium	increase	fecal samples
+30827722	AXOS	Blautia	increase	fecal samples
+30827722	AXOS	Fusicatenibacter saccharivorans	increase	fecal samples
+30827722	AXOS	Ruminococcus obeum	increase	fecal samples
+30827722	AXOS	Dorea	increase	fecal samples
+30827722	AXOS	Clostridium	decrease	fecal samples
+30827722	AXOS	Anaerotruncus	decrease	fecal samples
+30827722	AXOS	Erysipelothrix rhusiopathiae	decrease	fecal samples
+26203099	Agave inulin	Bifidobacterium	increase	fecal samples
+26203099	Agave inulin	Actinobacteria	increase	fecal samples
+26203099	Agave inulin	Ruminococcus	decrease	fecal samples
+24671237	GOS	Bifidobacterium	increase	fecal samples
+25331262	FOS	Lactobacillus	increase	fecal samples
+25331262	FOS	Escherichia coli	decrease	fecal samples
+33671147	Wheat	Ruminococcus	increase	fecal samples
+33671147	Wheat	Gemmiger	increase	fecal samples
+33671147	RS2	Roseburia	increase	fecal samples
+33671147	RS2	Ruminococcus	increase	fecal samples
+12004211	Inulin	Bacteroides fragilis	decrease	fecal samples
+17027233	KGM	Lactobacillus	increase	fecal samples
+17027233	KGM	Bifidobacterium	increase	fecal samples
+17027233	KGM	Clostridium	decrease	fecal samples
+21736814	PDX	Bifidobacterium	increase	fecal samples
+21736814	SCF	Bifidobacterium	increase	fecal samples
+22429361	Resistant dextrin	Bacteroides	increase	fecal samples
+22429361	Resistant dextrin	Clostridium	decrease	fecal samples
+https://doi.org/10.1016/j.jff.2019.103438	citrus pomace	Lachnospiraceae	increase	fecal samples
+https://doi.org/10.1016/j.jff.2019.103438	citrus pomace	Ruminococcaceae	increase	fecal samples
+33925049	WG	Escherichia-Shigella	decrease	fecal samples
+33925049	WG	Enterococcus	decrease	fecal samples
+33925049	WG	Veillonella	increase	fecal samples
+33925049	WG	Lachnoclostridium	increase	fecal samples
+33925049	WG	Bacteroides	increase	fecal samples
+35602030	RMD	Bacteroides	decrease	fecal samples
+35602030	RMD	Parabacteroides	increase	fecal samples
+35602030	RMD	Fusicatenibacter	increase	fecal samples
+35602030	RMD	Bifidobacterium	increase	fecal samples
+35602030	RMD	Ruminococcus gauvreauii group	increase	fecal samples
+https://www.sciencedirect.com/science/article/pii/S1756464616000694?via%3Dihub	RS4	Firmicutes	decrease	fecal samples
+https://www.sciencedirect.com/science/article/pii/S1756464616000694?via%3Dihub	RS4	Coprococcus	decrease	fecal samples
+https://www.sciencedirect.com/science/article/pii/S1756464616000694?via%3Dihub	RS4	Lachnospiraceae	decrease	fecal samples
+https://www.sciencedirect.com/science/article/pii/S1756464616000694?via%3Dihub	RS4	Ruminococcus	increase	fecal samples
+https://www.sciencedirect.com/science/article/pii/S1756464616000694?via%3Dihub	RS4	Faecalibacteria	increase	fecal samples
+https://ffhdj.com/index.php/ffhd/article/view/686	MDF	Prevotella	increase	fecal samples
+https://ffhdj.com/index.php/ffhd/article/view/686	MDF	Clostridium	increase	fecal samples
+29726951	Walnut	Bifidobacterium	decrease	fecal samples
+29726951	Walnut	Actinobacteria	decrease	fecal samples
+29726951	Walnut	Dialister	increase	fecal samples
+29726951	Walnut	Oscillospira	decrease	fecal samples
+29726951	Walnut	Clostridium	increase	fecal samples
+29726951	Walnut	Roseburia	increase	fecal samples
+29726951	Walnut	Faecalibacterium	increase	fecal samples
+29726951	Walnut	Dorea	decrease	fecal samples
+29726951	Walnut	Ruminococcus	decrease	fecal samples
+29726951	Walnut	Firmicutes	increase	fecal samples
+31367691	Avocado	Firmicutes	decrease	fecal samples
+31367691	Avocado	Bacteriodetes	decrease	fecal samples
+25498469	WB	Bifidobacterium	increase	fecal samples
+31983281	AXOS	Bifidobacterium	increase	fecal samples
+31983281	AXOS	Lachnospiraceae_NK4A136 group	increase	fecal samples
+31983281	AXOS	Senegalimassilia	increase	fecal samples
+31983281	AXOS	Barnesiella	increase	fecal samples
+31983281	AXOS	Ruminococcaceae_UCG-002	increase	fecal samples
+31983281	AXOS	Christensenellaceae_R-7 group	increase	fecal samples
+30527258	RMD	Bifidobacterium	increase	fecal samples
+24368315	AXOS	Bifidobacteria	increase	fecal samples
+27281813	SCF	Bifidobacterium	increase	fecal samples
+27281813	SCF	Parabacteroides	increase	fecal samples
+27281813	SCF	Anaerostipes	decrease	fecal samples
+27281813	SCF	Dorea	decrease	fecal samples
+27281813	SCF	Reclassified Ruminococcus	decrease	fecal samples
+27281813	SCF	Dialister	increase	fecal samples
+27281813	SCF	Unclassified Lachnospiraceae	increase	fecal samples

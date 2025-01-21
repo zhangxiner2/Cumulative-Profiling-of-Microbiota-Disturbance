@@ -1,0 +1,331 @@
+#Items	Summary ID
+AA amyloidosis	Unspecified_Amyloidosis
+Acne	Acne
+Acquired Immunodeficiency Syndrome	Unspecified_Immune_Deficiency
+Acute cerbral infarction	Cerebrovascular_Disease
+Acute hepatitis E	Other_Viral_Hepatitis
+Acute lymphoblastic leukemia	Lymphoid_Leukemia
+Acute severe colitis	Gastrointestinal_Infection
+Acute skin abscess	Skin_Infection
+Adenomatous Polyps	Familial_Adenomatous_Polyposis
+Adolescent idiopathic scoliosis	Abnormal_Spine_Curvature
+Aerobic vaginitis	Disease_of_the_Female_Reproductive_Organs
+Alcoholic cirrhosis	Substance_Abuse
+Alcoholic fatty liver	Substance_Abuse
+Alcoholic hepatitis	Substance_Abuse
+Alcoholic liver cirrhosis	Substance_Abuse
+Alcoholic liver disease	Substance_Abuse
+Allergic asthma	Asthma
+Allergic rhinoconjunctivitis	Allergic_Rhinitis
+Allergy	Allergy
+Allergy rhinitis	Allergic_Rhinitis
+Alopecia areata	Alopecia
+Alopecia universalis	Alopecia
+Alzheimers Disease	Alzheimers_Disease
+Amyotrophic lateral sclerosis	Motor_Neuron_Disease
+Ankylosing spondylitis	Inflammatory_Spondylopathies
+Anorexia nervosa	Eating_Disorder
+Anovulation	Menopausal_Disorder
+Anti-N-methyl-D-aspartate receptor encephalitis	Encephalitis
+Antrochoanal polyps	Non-Specific_Nasal_Throat_Disorder
+Aphthous stomatitis	Oral_Soft_Tissue_Disease
+Aphthous ulcer	Oral_Soft_Tissue_Disease
+Appendicitis	Appendiceal_Disease
+Asthma	Asthma
+Atherosclerosis	Atherosclerosis
+Atopic dermatitis	Atopic_Contact_Dermatitis
+Atopic eczema	Atopic_Contact_Dermatitis
+Atopic wheeze	Asthma
+Atrial fibrillation	Cardiac_Dysrhythmia
+Atrophic gastritis	Gastritis_Duodenitis
+Attention Deficit Hyperactivity Disorder	ADHD
+Autism	Autism
+Autism spectrum disorders	Autism
+Autoimmune hepatitis	Unspecified_Hepatitis
+Autoimmune polyendocrine syndrome type 1	Autoimmune_Polyglandular_Disorder
+Azoospermia	Disease_of_the_Male_Reproductive_Organs
+Bacterial vaginosis	Disease_of_the_Female_Reproductive_Organs
+Barretts oesophagus	Esophageal_Disease
+Behcets Disease	Behcets_Syndrome
+Biliary atresia	Hepatobiliary_Congenital_Anomaly
+Biliary tract cancer	Biliary_Tract_Disease
+Bipolar disorder	Bipolar_Disorder
+Bladder cancer	Bladder_Cancer
+Bleeding gum	Non-Specific_Gingival_Periodontal_Disorder
+Blepharitis	Eye_Inflammation
+Botulism	Gastrointestinal_Infection
+Breast cancer	Breast_Cancer
+Bronchiectasis	Emphysema_COPD
+Bronchiolitis	Acute_Bronchitis
+Budd-Chiari syndrome	Deep_Vein_Thrombosis
+Bullous pemphigoid	Non-Specific_Immune-Related_Skin_Disorder
+Burning mouth syndrome	General_Viral_Infection
+Cardiac valve calcification	Aneurysm
+Cardiovascular disease	Non-Specific_Cardiovascular_Disease
+Caries	Non-Specific_Dental_Disorder
+Celiac Disease	Celiac_Disease
+Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy	Poliomyelitis
+Cervical cancer	Benign_Uterine_Neoplasm
+Cervical intraneoplasia	Disease_of_the_Female_Reproductive_Organs
+Cervicitis	Disease_of_the_Female_Reproductive_Organs
+Chagas disease	Arthropod-Borne_Diseases
+Chlamydia infection	STI
+Chlamydia trachomatis infection	Eye_Infection
+Cholestasis	Hepatobiliary_Congenital_Anomaly
+Chronic fatigue syndrome	Chronic fatigue syndrome
+Chronic granulomatous disease	Unspecified_Immune_Disorder
+Chronic kidney disease	Chronic_Kidney_Disease
+Chronic liver disease	Chronic_Liver_Disease
+Chronic lung disease	Lung_Cancer
+Chronic mucocutaneous candidiasis	Fungal_Infection
+Chronic ocular graft-versus-host disease	Chronic ocular graft-versus-host disease
+Chronic pancreatitis	Pancreatic_Disease
+Chronic periodontitis	Non-Specific_Gingival_Periodontal_Disorder
+Chronic rhinosinusitis	Chronic_Sinusitis
+Chronic stress	Chronic stress
+Chronic urticaria	Atopic_Contact_Dermatitis
+Cirrhosis	Chronic_Liver_Disease
+Cleft palate	Oro-Facial_Congenital_Anomaly
+Clonorchis sinensis infection	Parasitic_Infection
+Clostridium difficile associated disease	Gastrointestinal_Infection
+Clostridium difficile infection	Gastrointestinal_Infection
+Cognitive impairment	Intellectual_Disability
+Collagenous colitis	Microscopic colitis
+Colon adenomas	Benign_Colon_Neoplasm
+Colon cancer	Colorectal_Cancer
+Colon polyps	Ulcerative_Colitis
+Colorectal cancer	Colorectal_Cancer
+Common Variable Immunodeficieny	Common_Variable_Immunodeficiency
+Constipation	Functional_Digestive_Disorder
+COPD	Emphysema_COPD
+Coronary artery disease	Non-Specified_Cardiac_Ischemia
+Coronary Heart Disease	Non-Specified_Cardiac_Ischemia
+Covid-19	General_Viral_Infection
+Crohns disease	Crohns_Disease
+Cystic fibrosis	Cystic_Fibrosis
+Cytolytic vaginosis	Disease_of_the_Female_Reproductive_Organs
+Denture Stomatitis	Oral_Soft_Tissue_Disease
+Diabetic nephropathy	Non-Specific_Nephropathy
+Diaper dermatitis	Atopic_Contact_Dermatitis
+Diarrhea	Gastrointestinal_Infection
+Diverticular disease	Diverticulosis_Diverticulitis
+Down syndrome	Downs_Syndrome
+Drug-resistant Epilepsy	Epilepsy_Related_Disorders
+Dry eye syndrome	Corneal_Disorders
+Edentulism	Non-Specific_Dental_Disorder
+Endometriosis	Disease_of_the_Female_Reproductive_Organs
+Enthesitis-related arthritis 	Osteoarthritis
+Eosinophilic esophagitis	Esophageal_Disease
+Esophageal cancer	Esophageal_Cancer
+Extrinsic black stain	Fungal_Infection
+Familial Mediterranean fever	Familial_Mediterranean_Fever
+Fatigue	Chronic fatigue syndrome
+Fibromyalgia	Non-Specific_Soft_Tissue_Disorder
+Food allergy	Food_Allergy
+Folliculitis decalvans	Hair_Related_Disease
+Frailty	Frailty
+Functional dyspepsia	Functional_Digestive_Disorder
+Gastric and duodenal ulcer	Gastrointestinal_Ulcer
+Gastric carcinoma	Stomach_Cancer
+Gastroenteritis	Radiation_Sensitivity
+Gastrointestinal follicular lymphoma	Non-Hodgkins_Lymphoma
+Gastro-oesophageal reflux	Esophageal_Disease
+Generalized anxiety disorder	Adjustment_Disorder
+Gestational diabetes	Gestational_Pregnancy_Related_Disorder
+Giardia intestinalis infection	Protozoan_Infection
+Gingivitis	Non-Specific_Gingival_Periodontal_Disorder
+Glycogen storage disease	Glycogenosis
+Gout	Gout_Related_Crystal_Arthropathies
+Granulomatosis with polyangiitis	Vasculitis
+Graves disease	Graves_Disease
+Graves orbitopathy	Graves_Disease
+Guttate psoriasis	Psoriasis_Related_Disorders
+H1N1 Influenza	Influenza
+H7N9	Influenza
+Halitosis	Halitosis
+Hand_foot and mouth disease	General_Viral_Infection
+Hashimotos thyroiditis	Thyroiditis
+Head_Neck cancer	Other_Lymphoid_Histiocytic_Cancers
+Heart failure	Non-Specific_Cardiovascular_Disease
+Helicobacter pylori infection	Helicobacter_Pylori_Infection
+Henoch-Schönlein Purpura	Purpura_Other_Hemorrhagic_Conditions
+Hepatitis B	Other_Viral_Hepatitis
+Hepatitis C	Viral_Hepatitis_C
+Hepatocellular cancer	Hepatobiliary_Cancer
+Hidradenitis suppurativa	Non-Specific_Immune-Related_Skin_Disorder
+Hirschsprungs disease	Hirschsprungs_Disease
+HIV infection	HIV
+Human end-stage renal disease	Non-Specific_Nephropathy
+Human papilloma virus infection	Viral_Warts_HPV
+Huntingtons Disease	Huntingtons_Chorea
+Hutchinson-Gilford progeria syndrome	Hutchinson-Gilford progeria syndrome
+Hyperglycemia	Hyperglycemia
+hyper-IgE syndrome	hyper-IgE syndrome
+Hyperlipidemia	Unspecified_Hyperlipidemia
+Hypertension	General_Hypertension
+Hyperthyroidism	Hyperthyroidism
+Hypopharyngeal cancer	Oro-Naso-Pharyngeal_Cancer
+Idiopathic central precocious puberty	Pubertal_Dysfunction
+Idiopathic focal epilepsy	Epilepsy_Related_Disorders
+Idiopathic infertility	Disease_of_the_Female_Reproductive_Organs
+Idiopathic nephrotic syndrome	Nephrotic_Syndrome
+Idiopathic pulmonary fibrosis	Alveolar_Disease
+Idiopathic REM Sleep Behavior Disorder	Sleep_Disorder
+Immunoglobulin A nephropathy	IgA_Immunodeficiency
+Infant colic	Infant colic
+Infantile eczema	Atopic_Contact_Dermatitis
+Infective colitis	Gastrointestinal_Infection
+Inflammatory bowel disease	Inflammatory bowel disease
+Influenza A	Influenza
+Interstitial cystitis	Cystitis_Urethritis
+Intestinal metaplasia	Intestinal metaplasia
+Intrahepatic Cholangiocarcinoma	Hepatobiliary_Cancer
+Invasive pneumococcal disease	Pneumonia
+Iron-deficiency anaemia	Non-Specific_Anemia
+Irritable bowel syndrome	IBS
+Ischemic stroke	Non-Specified_Cardiac_Ischemia
+Juvenile idiopathic arthritis	Rheumatoid_Arthritis_Related_Conditions
+Kaposis sarcoma	Kaposis_Sarcoma
+Keratitis	Eye_Inflammation
+Kidney stone	Urinary_Calculus
+Kostmann syndrome	Congenital_Neutropenia
+Laryngeal cancer	Oro-Naso-Pharyngeal_Cancer
+Laryngotracheal stenosis	Respiratory_Congenital_Anomaly
+Late-onset Sepsis	Gestational_Pregnancy_Related_Disorder
+Liver cirrhosis	Non-Specific_Liver_Disease
+Liver fibrosis	Liver fibrosis
+Lower respiratory tract infection	Acute_Bronchitis
+Lung cancer	Lung_Cancer
+Macular degeneration	Macular_Degeneration
+Major depressive disorder	Depression
+Malnutrition	Malnutrition
+Maturity-onset diabetes of the young 2	Type_II_Diabetes_Mellitus
+Megaesophagus	Esophageal_Disease
+Melasma	Melanoma
+Membranous nephropathy	Non-Specific_Nephropathy
+Meningococcal disease	General_Bacterial_Infection
+Metabolic syndrome	Metabolic_Syndrome_X
+Microscopic colitis	Microscopic colitis
+Migraine	Migraine
+Mucosa-associated lymphoid tissue lymphoma	Non-Hodgkins_Lymphoma
+Multiple sclerosis	Multiple_Sclerosis_Other_Demyelinating_Disease
+Multiple system atrophy	Motor_Neuron_Disease
+Myasthenia gravis	Myasthenia_Gravis
+Myositis	Dermatomyositis_Polymyositis
+Nasolacrimal duct obstruction	Lacrimal_System_Disorder
+Necrotizing enterocolitis	Neonatal_Disease
+Neisseria gonorrhoeae infection	Gestational_Pregnancy_Related_Disorder
+Neonatal jaundice	Neonatal_Disease
+Neuromyelitis optica	Multiple_Sclerosis_Other_Demyelinating_Disease
+Neuropathic bladder	Unspecified_Neuropathy
+Nonalcoholic fatty liver	Chronic_Liver_Disease
+Nonalcoholic steatohepatitis	Chronic_Liver_Disease
+Nongonococcal urethritis	STI
+Obesity	Obesity Metabolic
+Obstructive sleep apnea-hypopnea syndrome	Sleep_Apnea
+Oligoasthenoteratozoospermia	Disease_of_the_Male_Reproductive_Organs
+Oral cancer	Oro-Naso-Pharyngeal_Cancer
+Oral leukoplakia	Oral_Soft_Tissue_Disease
+Oral lichen planus	Lichen
+Oral potentially malignant disorder	Oro-Naso-Pharyngeal_Cancer
+Orofacial granulomatosis	Oro-Naso-Pharyngeal_Cancer
+Oropharyngeal cancer	Benign_Oropharyngeal_Neoplasm
+Osmotic diarrhea	Functional_Digestive_Disorder
+Osteoporosis	Osteoporosis
+Otitis Media	Ear_Infection
+Overactive bladder	Bladder_Disorder
+Palmoplantar pustulosis	Psoriasis_Related_Disorders
+Pancreatic cancer	Pancreatic_Cancer
+Pancreatic head cancer	Pancreatic_Cancer
+Pancreatitis	Pancreatic_Disease
+Parkinsons Disease	Parkinsons_Disease
+Pediculosis	Infestation
+Pelvic inflammatory disease	Disease_of_the_Female_Reproductive_Organs
+Pemphigus vulgaris	Non-Specific_Immune-Related_Skin_Disorder
+Periodontitis	Non-Specific_Gingival_Periodontal_Disorder
+Persistent stunting	Growth_Hormone_Deficiency
+Pervasive developmental disorder NOS	Unspecified_Childhood_Psychoses
+Pneumonia	Pneumonia
+Polycystic Ovary Syndrome	Disease_of_the_Female_Reproductive_Organs
+Postmenopausal	Menopausal_Disorder
+Posttraumatic stress syndrome	PTSD
+Pouchitis	Non-Specific_Gastrointestinal_Disorder
+Prediabetes	Unspecified_Diabetes_Mellitus
+Preeclamsia	Gestational_Pregnancy_Related_Disorder
+Pressure ulcers	Spirochetal_Infection
+Preterm birth	Gestational_Pregnancy_Related_Disorder
+Primary aldosteronism	Hyperaldosteronism
+Primary biliary cholangitis	Biliary_Tract_Disease
+Primary biliary cirrhosis	Biliary_Tract_Disease
+Primary immune thrombocytopenia	General_Thrombocytopenia
+Primary liver cancer	Hepatobiliary_Cancer
+Primary Open-Angle Glaucoma	Glaucoma
+Primary sclerosing cholangitis	Biliary_Tract_Disease
+Protracted bacterial bronchitis	Acute_Bronchitis
+Psoriasis	Psoriasis_Related_Disorders
+Psoriatic arthritis	Psoriasis_Related_Disorders
+Pulmonary arterial hypertension	Pulmonary_Heart_Disease
+Pulmonary tubercolosis	Tuberculosis
+Reactive arthritis	Reactive_Arthritis
+Rectal Carcinoma	Colorectal_Cancer
+Recurrent aphthous stomatitis	Oral_Soft_Tissue_Disease
+Recurrent miscarriage	Gestational_Pregnancy_Related_Disorder
+Recurrent tonsillitis	Chronic_Tonsillitis_Adenoiditis
+Recurrent wheeze	Asthma
+Refractory celiac disease	Celiac_Disease
+Rett Syndrome	Non-Specific_Neurologic_Congenital_Anomaly
+Rheumatoid arthritis	Rheumatoid_Arthritis_Related_Conditions
+Rhinitis	Allergic_Rhinitis
+Rhinovirus infection	General_Viral_Infection
+Rosacea	Rosacea
+Schizophrenia	Schizophrenia_Related_Psychosis
+Seborrheic dermatitis	Seborrheic_Dermatitis
+Seminal hyperviscosity	Disease_of_the_Male_Reproductive_Organs
+Sensitive scalp	Fungal_Infection
+Sepsis	Gestational_Pregnancy_Related_Disorder
+Severe congenital neutropenia	Congenital_Neutropenia
+Severe fever with thrombocytopenia syndrome	General_Thrombocytopenia
+severe skin and soft tissue infections	Non-Specific_Soft_Tissue_Disorder
+Shiga Toxin-producing E. coli infection	Escherichia_Coli_Infection
+Short Bowel Syndrome	Functional_Digestive_Disorder
+Sicca syndrome	Sjogrens_Syndrome
+Sickle cell disease	Hereditary_Hemoglobin_Disease
+Silicosis	Non-Specific_Pulmonary_Disorder
+Sjögren Syndrome	Sjogrens_Syndrome
+Small intestine neoplasm	Intestinal_Cancer
+Spinal cord injury	Spinal_Chord_Degeneration
+Spleen deficiency syndrome	Spleen_Disease
+Spondyloarthritis	General_Spondylosis_Spine_Disorder
+Stevens-Johnson syndrome	Non-Specific_Immune-Related_Skin_Disorder
+Stomach cancer	Stomach_Cancer
+Systemic inflammatory response syndrome	Septicemia
+Systemic lupus erythematosus	Lupus_Erythematosus
+Systemic sclerosis	Non-Specific_Pulmonary_Disorder
+Tetratricopeptide repeat domain 7A deficiency	Non-Specific_Digestive_Congenital_Anomaly
+Thyroid cancer	Thyroid_Cancer
+Tongue cancer	Oro-Naso-Pharyngeal_Cancer
+Tonsillar hypertrophy	Chronic_Tonsillitis_Adenoiditis
+Trachoma	Eye_Infection
+Transient Ischemic Attack	Brain_Damage
+Traumatic Brain Injury	Brain_Damage
+Trichomonas Vaginais	Disease_of_the_Female_Reproductive_Organs
+Tuberculosis	Tuberculosis
+Type 1 diabetes	Type_I_Diabetes_Mellitus
+Type 2 diabetes	Type_II_Diabetes_Mellitus
+Ulcerative colitis	Ulcerative_Colitis
+Undernourishment	Malnutrition
+Urgency urinary incontinence	Urethral_Disorder
+Urogenital Schistosomiasis	Parasitic_Infection
+Urolithiasis	Urinary_Calculus
+Uveitits	Eye_Inflammation
+Vestibulodynia	Disease_of_the_Female_Reproductive_Organs
+Viral Diarrhea	Gastrointestinal_Infection
+Viral respiratory tract infection	Upper_Respiratory_Inflammation
+Vitiligo	Dyschromia
+Vogt-Koyagani-Harada disease	Eye_Inflammation
+Vulvar vestibulitis syndrome	Disease_of_the_Female_Reproductive_Organs
+Vulvodynia	Disease_of_the_Female_Reproductive_Organs
+Whipples disease	General_Bacterial_Infection
+Wilsons Disease	Copper_Metabolism_Disorder
+Wiskott-Aldrich syndrome	Wiskott-Aldrich_Syndrome
+X-linked inhibitor of apoptosis deficiency	Autoimmune_Lymphoproliferative_Syndrome
