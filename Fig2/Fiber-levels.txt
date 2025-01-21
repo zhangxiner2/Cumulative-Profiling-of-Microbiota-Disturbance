@@ -1,0 +1,6 @@
+#Fiber-levels	
+Phylum	2.30%
+Order	0.40%
+Family	3.10%
+Genu	86.90%
+Species	7.30%
