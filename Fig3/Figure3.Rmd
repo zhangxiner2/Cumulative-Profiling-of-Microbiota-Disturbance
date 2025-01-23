@@ -20,7 +20,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 library(lessR)
 library(ggplot2)
-mydata <- data.frame(occupation = c(rep("Genu", round(64.1 * 1000)),
+mydata <- data.frame(occupation = c(rep("Genus", round(64.1 * 1000)),
                    rep("Species", round(24.9 * 1000)),
                    rep("Phylum", round(2.4 * 1000)),
                    rep("Order", round(0.6 * 1000)),
